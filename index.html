@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <title>Angular Tutorial</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap-theme.css"></link>
+        <link rel="stylesheet" href="/dist/css/main.css">
+    </head>
+    <body ng-controller="MainCtrl as mn">
+        <div class="container-fluid">
+            <div ng-include src="'templates/nav.html'"></div>
+            <div class="container">
+                <ng-view></ng-view>
+                <ui-view></ui-view>
+            </div>
+        </div>
+        <!-- libraries scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.28/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.28/angular-route.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.28/angular-resource.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+        <!-- scripts -->
+        <script src="/dist/js/main.js"></script>
+    </body>
+</html>
