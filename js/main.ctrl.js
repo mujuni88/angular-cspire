@@ -4,11 +4,11 @@
  angular.module('app')
         .controller('MainCtrl', MainCtrl);
 
-        function MainCtrl(){
+        function MainCtrl($scope){
           var vm = this;
 
           vm.page = {
-            topic:'Factory vs Service',
+            topic:'MAIN CONROLLLER',
             desc:'Sharing resources in app'
           };
 

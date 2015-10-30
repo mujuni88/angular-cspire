@@ -1,0 +1,18 @@
+<section>
+    <div class="page-header" ng-init="pt.find()">
+        <h1>Posts</h1>
+    </div>
+    <section class="row">
+      <div class="col-sm-3">
+        <div class="list-group">
+          <a data-ng-repeat="post in pt.posts" ui-sref="posts.view({postId:post.id})" class="list-group-item" ui-sref-active="active">
+            <p><b>{{post.title}}</b></p>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <ui-view></ui-view>
+      </div>
+    </section>
+
+</section>

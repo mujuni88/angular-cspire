@@ -46,5 +46,17 @@
         controller: 'ContactCtrl',
         controllerAs: 'ct'
       })
+      .state('posts', {
+        url:'/posts',
+        templateUrl: 'templates/list-posts.html',
+        controller: 'PostCtrl',
+        controllerAs: 'pt'
+      })
+      .state('posts.view', {
+        url: '/:postId',
+        templateUrl: 'templates/view-posts.html',
+        controller: 'PostCtrl',
+        controllerAs: 'pt'
+      })
   }
 })();
